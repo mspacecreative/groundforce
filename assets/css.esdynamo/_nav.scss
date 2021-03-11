@@ -10,6 +10,35 @@
     display: block;
 }
 
+// CLOSE BUTTON
+.closeModalButton {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    outline: none;
+    right: 2em;
+    top: 3.5em;
+    cursor: pointer;
+    z-index: 999;
+}
+.closeModalButton span {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+}
+.closeModalButton span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
 // OVERLAY MENU
 .menuContainer {
 	background-color: $brand_red;

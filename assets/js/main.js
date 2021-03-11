@@ -3,22 +3,38 @@
 
 	$(function () {
 		
+		// ADD / REMOVE CLASS ON SCROLL
+		$.fn.visible = function(partial) {
+		    var $t = $(this),
+		    	$w = $(window),
+		        viewTop = $w.scrollTop(),
+		        viewBottom = viewTop + $w.height(),
+		        _top = $t.offset().top,
+		        _bottom = _top + $t.height(),
+		        compareTop = partial === true ? _bottom : _top,
+		        compareBottom = partial === true ? _top : _bottom;
+		    
+		    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+		};
+		
 		var 
 		menuOverlay = $('.menuOverlay'),
 		hamburgerIcon = $('.hamburger'),
-		header = $('header');
+		header = $('header'),
+		closeButton = $('.closeModalButton'),
+		toggle_menu = hamburgerIcon.add(closeButton);
 		function toggleMenu() {
-			$('body').toggleClass('menuOpen');
+			//$('body').toggleClass('menuOpen');
 			
-			hamburgerIcon.toggleClass('is-active');
+			//hamburgerIcon.toggleClass('is-active');
 			
 			header.toggleClass('is-active');
 			
-			menuOverlay.slideToggle();
+			menuOverlay.fadeToggle();
 		}
 		
 		// MOBILE MENU
-		hamburgerIcon.click(function() {
+		toggle_menu.click(function() {
 			toggleMenu();
 		});
 		
@@ -133,26 +149,36 @@
 					//$('.intro_container').removeClass('relative_positioning');
 					$('header').removeClass('shrink');
 				}
-				inViewport();
+				//inViewport();
+				$(".cta").each(function(i, el) {
+				    var el = $(el);
+				    if (el.visible(true)) {
+						el.addClass("expand"); 
+				    } else {
+						el.removeClass("expand");
+				    }
+				});
 			});
 			
+			/*
 			$(window).resize(function(){
 				inViewport();
 			});
 			
-			 function inViewport(){
-				 $('.cta').each(function(){
-					 var divPos = $(this).offset().top,
-				 		 divHeight = $(this).outerHeight() * 2,
-			             topOfWindow = $(window).scrollTop();
+			function inViewport(){
+				$('.cta').each(function(){
+					var divPos = $(this).offset().top,
+				 		divHeight = $(this).outerHeight() * 2,
+			            topOfWindow = $(window).scrollTop();
 					 
-					 if ( divPos < topOfWindow + divHeight ) {
-						 $(this).addClass('expand');
-					 } else {
+					if ( divPos < topOfWindow + divHeight ) {
+						$(this).addClass('expand');
+					} else {
 					 	$(this).removeClass('expand');
-					 }
-				 });
-			 }
+					}
+				});
+			}
+			*/
 			
 			// ANIMATE ON SCROLL
 			AOS.init();

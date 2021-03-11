@@ -2827,6 +2827,36 @@ footer {
 	display: block;
 }
 
+.closeModalButton {
+	border: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: transparent;
+	outline: none;
+	right: 2em;
+	top: 3.5em;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.closeModalButton span {
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+	transform: rotate(45deg);
+	top: 50%;
+	left: 50%;
+	margin-left: -15px;
+}
+
+.closeModalButton span:nth-child(2) {
+	transform: rotate(-45deg);
+}
+
 .menuContainer {
 	background-color: #db4934;
 	position: fixed;
@@ -3473,6 +3503,8 @@ header.shrink .inner_container {
 .cta.expand {
 	max-width: 100%;
 	transition: .5s ease-in-out;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .cta.centered {
