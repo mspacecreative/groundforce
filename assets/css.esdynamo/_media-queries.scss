@@ -1,0 +1,108 @@
+@media (min-width: 64em) {
+	.testimonial .col:nth-of-type(2) {
+		padding-left: 6em;
+	}
+}
+
+@media (max-width: 64em) {
+	.work-carousel .col {
+	    padding: 0 10px;
+	}
+	.line-rule-right {
+	    padding: 0 0 0 10px;
+	    width: calc(100% - 10px);
+	}
+	.before_and_after img ~ p {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 40px 10px 10px;
+		background: linear-gradient(0deg, rgba(0,0,0,.75), rgba(0,0,0,0));
+		color: #fff;
+		left: 0;
+	}
+	.before_and_after .row::after, .after::before {
+		display: none;
+	}
+	.testimonial .col:nth-of-type(2) {
+	    border-left: none;
+	}
+	.instagram-gallery .col {
+		padding-bottom: 10px;
+	}
+	.row_with_icons .col {
+		padding-bottom: 35px;
+	}
+	.row_with_icons .col:last-of-type {
+		padding-bottom: 0;
+	}
+	.cta .justify-content-end, .quote_form .justify-content-end {
+		flex-direction: column;
+		//align-items: flex-end;
+	}
+	.quote_form .justify-content-end {
+		align-items: flex-end;
+	}
+	.mobile_margin_bottom_2em {
+		margin-bottom: 2em;
+	}
+	.cta .mobile_margin_bottom_2em {
+		margin-bottom: 0;
+	}
+}
+@media (max-width: 48em) {
+	
+	.cta .mobile_margin_bottom_2em {
+		margin-bottom: 2em;
+	}
+}
+@media (max-width: 850px) and (orientation: landscape) {
+	.justify-content-xs-end {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.subscribe_form input[type=submit] {
+		border-top: none;
+	}
+}
+@media (max-width: 480px) {
+	.justify-content-end {
+		justify-content: flex-start;
+	}
+	.logo {
+	    width: 125px;
+	}
+	.shrink .logo {
+		width: 60px;
+	}
+	.splash_title {
+		font-size: 33px;
+	}
+	.justify-content-xs-end {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.subscribe_form input[type=submit] {
+		border-top: none;
+	}
+	.splash_title {
+		font-size: 30px;
+		width: 80%;
+	}
+}
+/*
+@media (max-width: 350px) {
+	.subscribe_form > .col:first-of-type {
+		flex: 0 0 58.33333333%;
+		max-width: 58.33333333%;
+	}
+	.subscribe_form > .col:last-of-type {
+		flex: 0 0 41.66666667%;
+		max-width: 41.66666667%;
+	}
+	.subscribe_form input[type=submit] {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+*/
