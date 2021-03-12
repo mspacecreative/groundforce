@@ -45,17 +45,17 @@ function my_acf_init() {
 			'supports'			=> array( 'mode' => false ),
 		));
 		
-		// register product boxes
+		// register grid block
 		acf_register_block(array(
-			'name'				=> 'product-boxes',
-			'title'				=> __('Product Boxes'),
-			'description'		=> __('Repeatable product box features'),
+			'name'				=> 'grid',
+			'title'				=> __('Content Grid'),
+			'description'		=> __('Repeatable columns in variable column widths'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
-			'keywords'			=> array( 'products', 'content', 'repeatable' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'keywords'			=> array( 'content', 'grid', 'repeatable' ),
+			//'mode'				=> 'edit',
+			//'supports'			=> array( 'mode' => false ),
 		));
 		
 		// register download boxes

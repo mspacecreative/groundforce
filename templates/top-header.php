@@ -2,11 +2,15 @@
 <header>
 	<div class="inner_container">
 		<div class="search">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/search.svg">
+			<a href="#">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/search.svg">
+			</a>
 		</div>
 		
 		<div class="logo">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/branding/gf-logo.svg">
+			<a href="<?php echo home_url(); ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/branding/gf-logo.svg">
+			</a>
 		</div>
 		
 		<!-- MENU TOGGLE -->
@@ -18,5 +22,4 @@
 		<!-- / MENU TOGGLE -->
 	</div>
 </header>
-<div class="header_backdrop"></div>
 <!-- / header -->

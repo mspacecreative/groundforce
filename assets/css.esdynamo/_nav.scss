@@ -10,7 +10,15 @@
     display: block;
 }
 
+.page #main-content, .error404 #main-content {
+	margin-top: 250px;
+}
+.home.page #main-content {
+	margin-top: 0;
+}
+
 // CLOSE BUTTON
+/*
 .closeModalButton {
     border: none;
     margin: 0;
@@ -25,6 +33,22 @@
     cursor: pointer;
     z-index: 999;
 }
+*/
+.closeModalButton, .closeSearchButton {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    outline: none;
+    right: 2em;
+    top: 1em;
+    cursor: pointer;
+    z-index: 999;
+}
+/*
 .closeModalButton span {
     position: absolute;
     width: 30px;
@@ -35,7 +59,18 @@
     left: 50%;
     margin-left: -15px;
 }
-.closeModalButton span:nth-child(2) {
+*/
+.closeModalButton span, .closeSearchButton span {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+}
+.closeModalButton span:nth-child(2), .closeSearchButton span:nth-child(2) {
     transform: rotate(-45deg);
 }
 
@@ -73,14 +108,20 @@ html.menOpen, body.menuOpen {
 // NAV OVERLAY
 .menuOverlay {
 	top: 0;
-	left: 0;
+	right: 0;
+	transform: translate(300px,0);
 	height: 100%;
 	width: 100%;
+	max-width: 300px;
 	position: fixed;
-	display: none;
 	z-index: 99999;
 	background-color: $brand_red;
 	overflow: auto;
+	transition: .25s ease-in-out;
+}
+.menuOverlay.show {
+	transform: translate(0,0);
+	transition: .25s ease-in-out;
 }
 .menuInner {
 	padding: 5em 2em;
@@ -191,7 +232,7 @@ html.menOpen, body.menuOpen {
 .hamburger-box {
 	width: 25px;
 	height: 25px;
-	margin-top: 10px;
+	//margin-top: 10px;
 }
 .hamburger-inner, .hamburger--spin .hamburger-inner::before, .hamburger--spin .hamburger-inner::after {
 	background-color: #000;

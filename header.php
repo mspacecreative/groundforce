@@ -18,6 +18,14 @@
 	</head>
 	<body <?php body_class(); ?>>
 		
+		<!-- search bar -->
+		<?php get_template_part('templates/search-bar'); ?>
+		<!-- / search bar -->
+		
+		<!-- menu -->
+		<?php get_template_part('templates/menu'); ?>
+		<!-- / menu -->
+		
 		<!-- wrapper -->
 		<div class="wrapper">
 			

@@ -19,6 +19,7 @@ function misha_allowed_block_types( $allowed_blocks ) {
 		'acf/half-and-half-img-text',
 		'acf/variable-columns',
 		'acf/carousel',
+		'acf/grid',
 	);
  
 }

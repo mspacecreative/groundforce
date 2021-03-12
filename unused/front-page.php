@@ -1,8 +1,7 @@
 <?php 
-get_header(); ?>
+get_header('home'); ?>
 
 <div class="splash header-transition">
-			<div class="header_backdrop"></div>
 			<div class="static_img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/img/GFWebsitePhoto1.jpg);"></div>
 			<div class="blur_overlay"></div>
 			<div class="carousel">
@@ -21,12 +20,52 @@ get_header(); ?>
 			</div>
 		</div>
 		
-		<?php if ( have_posts() ) {
-			while ( have_posts() ) {
-				the_post();
-				the_content();
-			}
-		} ?>
+		<section id="intro" class="intro padding-6em header-transition">
+			<!--<div class="inner_container fixed-tagline">
+				<h1 class="splash_title ghost" data-aos="fade-up" data-aos-duration="1500">imagine your outdoors</h1>
+			</div>-->
+			<div class="inner_container intro_container" data-aos="fade-up" data-aos-duration="1500">
+				<h2 class="text_align_center">services</h2>
+				<div class="row row_with_icons col_borders">
+					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="col_icon">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/landscaping.svg">
+						</div>
+						<div class="col_inner boxed">
+							<h3>landscaping</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+						</div>
+					</div>
+					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="1500">
+						<div class="col_icon">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/lounger.svg">
+						</div>
+						<div class="col_inner boxed">
+							<h3>outdoor spaces</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+						</div>
+					</div>
+					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="1500">
+						<div class="col_icon">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/snowflake.svg">
+						</div>
+						<div class="col_inner boxed">
+							<h3>snow + ice control</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+						</div>
+					</div>
+					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="1500">
+						<div class="col_icon">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/poolscape.svg">
+						</div>
+						<div class="col_inner boxed">
+							<h3>poolscapes</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		
 		<section class="cta centered">
 			<div class="inner_container padding-6em">
@@ -150,10 +189,22 @@ get_header(); ?>
 		 / newsletter -->
 		
 		<section class="instagram-gallery">
-			<?php echo do_shortcode('[insta-gallery id="1"]'); ?>
+			<div class="container">
+				<div class="row narrow_gutters">
+					<div class="col col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram-1.jpg">
+					</div>
+					<div class="col col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram-2.jpg">
+					</div>
+					<div class="col col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram-3.jpg">
+					</div>
+				</div>
+			</div>
 			<div class="inner_container">
 				<div class="row view-all-instagram">
-					<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-end margin-top-1em">
+					<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-end margin-top-2em">
 						<a href="http://instagram.com/groundforceproperty" target="_blank" class="content_link align-self-center">more on instagram</a>
 					</div>
 				</div>

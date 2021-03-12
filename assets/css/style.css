@@ -2705,6 +2705,10 @@ footer {
 	transition: .25s ease-in-out;
 }
 
+.page_title {
+	text-align: center;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -2827,33 +2831,71 @@ footer {
 	display: block;
 }
 
+.page #main-content, .error404 #main-content {
+	margin-top: 250px;
+}
+
+.home.page #main-content {
+	margin-top: 0;
+}
+
+/*
 .closeModalButton {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    outline: none;
+    right: 2em;
+    top: 3.5em;
+    cursor: pointer;
+    z-index: 999;
+}
+*/
+
+.closeModalButton, .closeSearchButton {
 	border: none;
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	width: 25px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 	background-color: transparent;
 	outline: none;
 	right: 2em;
-	top: 3.5em;
+	top: 1em;
 	cursor: pointer;
 	z-index: 999;
 }
 
+/*
 .closeModalButton span {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+}
+*/
+
+.closeModalButton span, .closeSearchButton span {
 	position: absolute;
-	width: 30px;
+	width: 20px;
 	height: 2px;
 	background-color: #fff;
 	transform: rotate(45deg);
 	top: 50%;
 	left: 50%;
-	margin-left: -15px;
+	margin-left: -10px;
 }
 
-.closeModalButton span:nth-child(2) {
+.closeModalButton span:nth-child(2), .closeSearchButton span:nth-child(2) {
 	transform: rotate(-45deg);
 }
 
@@ -2889,14 +2931,21 @@ html.menOpen, body.menuOpen {
 
 .menuOverlay {
 	top: 0;
-	left: 0;
+	right: 0;
+	transform: translate(300px, 0);
 	height: 100%;
 	width: 100%;
+	max-width: 300px;
 	position: fixed;
-	display: none;
 	z-index: 99999;
 	background-color: #db4934;
 	overflow: auto;
+	transition: .25s ease-in-out;
+}
+
+.menuOverlay.show {
+	transform: translate(0, 0);
+	transition: .25s ease-in-out;
 }
 
 .menuInner {
@@ -3020,7 +3069,6 @@ html.menOpen, body.menuOpen {
 .hamburger-box {
 	width: 25px;
 	height: 25px;
-	margin-top: 10px;
 }
 
 .hamburger-inner, .hamburger--spin .hamburger-inner::before, .hamburger--spin .hamburger-inner::after {
@@ -3145,9 +3193,64 @@ span.at-icon-wrapper {
 	display: none;
 }
 
+.search_container {
+	left: 0;
+	top: 0;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	max-width: 300px;
+	background-color: #db4934;
+	visibility: hidden;
+	transform: translate(-100%, 0);
+	z-index: 999999;
+	transition: .25s ease-in-out;
+	padding-top: 3.5em;
+}
+
+.search_container.show {
+	transform: translate(0, 0);
+	visibility: visible;
+	transition: .25s ease-in-out;
+}
+
+.closeSearchButton span:nth-child(2) {
+	transform: rotate(-45deg);
+}
+
+.modal_overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	opacity: .75;
+	position: fixed;
+	z-index: 9999;
+	cursor: pointer;
+}
+
+/*
+.wrapper {
+	transition: .25s ease-in-out;
+}
+.search_container.show ~ .wrapper {
+	transform: translate(300px, 0);
+	transition: .25s ease-in-out;
+}
+*/
+
+.row_with_icons .col {
+	padding-bottom: 35px;
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+html.fixed {
+	overflow: hidden;
 }
 
 body {
@@ -3160,6 +3263,9 @@ header {
 	width: 100%;
 	z-index: 999;
 	transition: 1s ease-in-out;
+}
+
+.home header {
 	transform: translate(0, -100%);
 }
 
@@ -3187,6 +3293,10 @@ header.visible {
 }
 
 .header_backdrop {
+	display: none;
+}
+
+.home .header_backdrop {
 	background: linear-gradient(180deg, white, rgba(255, 255, 255, 0));
 	height: 50vh;
 	top: 0;
@@ -3194,6 +3304,7 @@ header.visible {
 	width: 100%;
 	position: absolute;
 	z-index: 99;
+	display: block;
 }
 
 .logo img {
@@ -3679,6 +3790,10 @@ section {
 	padding-bottom: 6em;
 }
 
+.margin-top-1em {
+	margin-top: 1em;
+}
+
 .margin-top-2em {
 	margin-top: 2em;
 }
@@ -3912,6 +4027,10 @@ p ~ .button {
 	.testimonial .col:nth-of-type(2) {
 		padding-left: 6em;
 	}
+	
+	.col:nth-child(2n+1):nth-last-child(-n+2), .col:nth-child(2n+1):nth-last-child(-n+2) ~ .col, .col:nth-child(3n+1):nth-last-child(-n+3), .col:nth-child(3n+1):nth-last-child(-n+3) ~ .col, .col:nth-child(4n+1):nth-last-child(-n+4), .col:nth-child(4n+1):nth-last-child(-n+4) ~ .col {
+		padding-bottom: 0;
+	}
 }
 
 @media (max-width: 64em) {
@@ -3969,11 +4088,23 @@ p ~ .button {
 	.cta .mobile_margin_bottom_2em {
 		margin-bottom: 0;
 	}
+	
+	.col:nth-child(2n+1):nth-last-child(-n+2), .col:nth-child(2n+1):nth-last-child(-n+2) ~ .col {
+		padding-bottom: 0;
+	}
 }
 
 @media (max-width: 48em) {
 	.cta .mobile_margin_bottom_2em {
 		margin-bottom: 2em;
+	}
+	
+	.col:nth-child(2n+1):nth-last-child(-n+2) {
+		padding-bottom: 35px;
+	}
+	
+	.col:nth-child(2n+1):nth-last-child(-n+2) ~ .col {
+		padding-bottom: 0;
 	}
 }
 

@@ -2,6 +2,16 @@
 	.testimonial .col:nth-of-type(2) {
 		padding-left: 6em;
 	}
+	.col:nth-child(2n+1):nth-last-child(-n+2),
+	.col:nth-child(2n+1):nth-last-child(-n+2) ~ .col,
+	
+	.col:nth-child(3n+1):nth-last-child(-n+3),
+	.col:nth-child(3n+1):nth-last-child(-n+3) ~ .col,
+	
+	.col:nth-child(4n+1):nth-last-child(-n+4),
+	.col:nth-child(4n+1):nth-last-child(-n+4) ~ .col {
+	    padding-bottom: 0;
+	}
 }
 
 @media (max-width: 64em) {
@@ -49,11 +59,22 @@
 	.cta .mobile_margin_bottom_2em {
 		margin-bottom: 0;
 	}
+	
+	.col:nth-child(2n+1):nth-last-child(-n+2),
+	.col:nth-child(2n+1):nth-last-child(-n+2) ~ .col {
+	    padding-bottom: 0;
+	}
 }
 @media (max-width: 48em) {
 	
 	.cta .mobile_margin_bottom_2em {
 		margin-bottom: 2em;
+	}
+	.col:nth-child(2n+1):nth-last-child(-n+2) {
+		padding-bottom: 35px;
+	}
+	.col:nth-child(2n+1):nth-last-child(-n+2) ~ .col {
+	    padding-bottom: 0;
 	}
 }
 @media (max-width: 850px) and (orientation: landscape) {

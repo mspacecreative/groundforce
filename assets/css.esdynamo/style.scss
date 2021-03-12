@@ -9,14 +9,23 @@ $brand_red: #db4934;
 @import "_slick.scss";
 @import "_images.scss";
 @import "_footer.scss";
+@import "_typography.scss";
 // HAMBURGER
 @import "_hamburgers.scss";
 // NAV
 @import "_nav.scss";
+// SEARCH
+@import "_search.scss";
+// FLEXBOX CUSTOM
+@import "_flexbox.scss";
 
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+html.fixed {
+	overflow: hidden;
 }
 
 body {
@@ -29,6 +38,8 @@ header {
 	width: 100%;
 	z-index: 999;
 	transition: 1s ease-in-out;
+}
+.home header {
 	transform: translate(0, -100%);
 }
 header.visible.down {
@@ -50,6 +61,9 @@ header.visible {
 	transition: .5s ease-in-out;
 }
 .header_backdrop {
+	display: none;
+}
+.home .header_backdrop {
 	background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,0));
 	height: 50vh;
 	top: 0;
@@ -57,6 +71,7 @@ header.visible {
 	width: 100%;
 	position: absolute;
 	z-index: 99;
+	display: block;
 }
 .logo img {
 	width: 100%;
@@ -511,6 +526,9 @@ section {
 
 .padding-bottom-6em {
 	padding-bottom: 6em;
+}
+.margin-top-1em {
+	margin-top: 1em;
 }
 .margin-top-2em {
 	margin-top: 2em;
