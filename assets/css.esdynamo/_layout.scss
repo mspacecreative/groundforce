@@ -1,0 +1,12 @@
+.light_grey_bg {
+	background-color: $brand_light_grey;
+}
+.row.narrow_gutters {
+	margin-right: -.25rem;
+	margin-left: -.25rem;
+}
+.row.narrow_gutters > .col {
+	padding-left: .25rem;
+	padding-right: .25rem;
+	padding-bottom: .5rem;
+}

@@ -1,16 +1,14 @@
 .search_container {
 	left: 0;
 	top: 0;
-	height: 100%;
 	position: fixed;
 	width: 100%;
-	max-width: 300px;
 	background-color: $brand_red;
 	visibility: hidden;
-	transform: translate(-100%, 0);
+	transform: translate(0, -100%);
 	z-index: 999999;
 	transition: .25s ease-in-out;
-	padding-top: 3.5em;
+	padding: 2em 0;
 }
 .search_container.show {
 	transform: translate(0, 0);

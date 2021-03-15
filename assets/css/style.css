@@ -2831,7 +2831,7 @@ footer {
 	display: block;
 }
 
-.page #main-content, .error404 #main-content {
+.page #main-content, .error404 #main-content, .single #main-content {
 	margin-top: 250px;
 }
 
@@ -3196,16 +3196,14 @@ span.at-icon-wrapper {
 .search_container {
 	left: 0;
 	top: 0;
-	height: 100%;
 	position: fixed;
 	width: 100%;
-	max-width: 300px;
 	background-color: #db4934;
 	visibility: hidden;
-	transform: translate(-100%, 0);
+	transform: translate(0, -100%);
 	z-index: 999999;
 	transition: .25s ease-in-out;
-	padding-top: 3.5em;
+	padding: 2em 0;
 }
 
 .search_container.show {
@@ -3244,9 +3242,32 @@ span.at-icon-wrapper {
 	padding-bottom: 35px;
 }
 
+.light_grey_bg {
+	background-color: #EAEAEA;
+}
+
+.row.narrow_gutters {
+	margin-right: -.25rem;
+	margin-left: -.25rem;
+}
+
+.row.narrow_gutters > .col {
+	padding-left: .25rem;
+	padding-right: .25rem;
+	padding-bottom: .5rem;
+}
+
+.before_and_after .button {
+	align-self: center;
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+html {
+	background-color: #333;
 }
 
 html.fixed {
@@ -3305,6 +3326,10 @@ header.visible {
 	position: absolute;
 	z-index: 99;
 	display: block;
+}
+
+.wrapper {
+	background-color: #fff;
 }
 
 .logo img {
@@ -3731,9 +3756,9 @@ section {
 }
 
 .testimonial {
-	background-image: url(../img/infinity_pool.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-color: #333;
 }
 
 .testimonial::before {
@@ -3744,6 +3769,10 @@ section {
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.testimonial.no-bg-img::before {
+	display: none;
 }
 
 .testimonial p {

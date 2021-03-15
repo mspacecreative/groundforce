@@ -58,10 +58,16 @@ function gf_styles() {
     // Register CSS
     wp_enqueue_style( 'google-fonts' );
     
+    // LIGHTBOX STYLES
+    wp_register_style( 'lightbox-styles', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', array(), null );
+    
     // SLICK SCRIPT
     wp_register_script('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, true );
 	// Enqueue Scripts
 	wp_enqueue_script( 'slick' );
+	
+	// LIGHTBOX SCRIPT
+    wp_register_script('lightbox', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', array('jquery'), null, true );
 	
 	// AOS SCRIPT
 	wp_register_script('aos', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array('jquery'), null, true );

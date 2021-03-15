@@ -60,15 +60,18 @@ function my_acf_init() {
 		
 		// register download boxes
 		acf_register_block(array(
-			'name'				=> 'download-boxes',
-			'title'				=> __('Download Boxes'),
-			'description'		=> __('Repeatable file download links in boxes'),
+			'name'				=> 'cta',
+			'title'				=> __('Call to Action Block'),
+			'description'		=> __('Displays call to action heading and button'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'images-alt',
-			'keywords'			=> array( 'downloads', 'content', 'repeatable' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'icon'				=> 'megaphone',
+			'keywords'			=> array( 'call to action', 'button', 'cta' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register full span img text left block
@@ -203,15 +206,19 @@ function my_acf_init() {
 		
 		// register single testimonial block
 		acf_register_block(array(
-			'name'				=> 'testimonial-single',
-			'title'				=> __('Testimonial Carousel Section'),
-			'description'		=> __('Displays testimonials in a carousel'),
+			'name'				=> 'testimonial',
+			'title'				=> __('Testimonial Block'),
+			'description'		=> __('Display a testimonial'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'images-alt',
+			'icon'				=> 'format-quote',
 			'keywords'			=> array( 'testimonial', 'quote' ),
 			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register home page slider block
@@ -268,15 +275,18 @@ function my_acf_init() {
 		
 		// register brand grid / carousel
 		acf_register_block(array(
-			'name'				=> 'brand',
-			'title'				=> __('Brands Block'),
-			'description'		=> __('Displays brands in either grid or carousel'),
+			'name'				=> 'before-after',
+			'title'				=> __('Before + After Block'),
+			'description'		=> __('Displays before and after photos and description'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'images-alt',
-			'keywords'			=> array( 'image grid', 'carousel' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'icon'				=> 'columns',
+			'keywords'			=> array( 'before and after', 'recent work' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 
 	}
@@ -291,21 +301,6 @@ function my_acf_block_render_callback( $block ) {
 	if( file_exists( get_theme_file_path("/templates/blocks/block-{$slug}.php") ) ) {
 		include( get_theme_file_path("/templates/blocks/block-{$slug}.php") );
 	}
-	
-	// Create id attribute allowing for custom "anchor" value.
-	$id = 'testimonial-' . $block['id'];
-	if( !empty($block['anchor']) ) {
-		$id = $block['anchor'];
-	}
-	
-	// Create class attribute allowing for custom "className" and "align" values.
-	$className = 'testimonial';
-	if( !empty($block['className']) ) {
-	    $className .= ' ' . $block['className'];
-	}
-	if( !empty($block['align']) ) {
-	    $className .= ' align' . $block['align'];
-	}
 }
 
 // OPTIONS PAGE
@@ -313,4 +308,31 @@ if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page( 'Theme Settings' );
 	
+}
+
+// CTA BUTTON FUNCTION
+function ctaButton() {
+	if ( have_rows('cta') ):
+	while ( have_rows('cta') ): the_row();
+		
+	$pagelink = get_sub_field('page_link');
+	$anchorlink = get_sub_field('anchor_link');
+	$externallink = get_sub_field('external_link');
+	$label = get_sub_field('label'); ?>
+		
+	<a 
+	<?php 
+	if ( $anchorlink ): echo 'href="#'; echo $anchorlink; echo '"'; 
+	elseif ( $pagelink ): echo 'href="'; echo $pagelink; echo '"'; 
+	elseif ( $externallink ): echo 'href="'; echo $externallink; echo '"'; echo 'target="_blank"'; 
+	endif; ?> class="button">
+	<?php 
+	if ( $label ): echo $label; 
+	else: echo esc_html_e('Learn more'); 
+	endif; ?>
+	</a>
+		
+	<?php 
+	endwhile;
+	endif;
 }

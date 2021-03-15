@@ -18,10 +18,18 @@ $brand_red: #db4934;
 @import "_search.scss";
 // FLEXBOX CUSTOM
 @import "_flexbox.scss";
+// LAYOUT
+@import "_layout.scss";
+// BUTTONS
+@import "_buttons.scss";
 
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+html {
+	background-color: #333;
 }
 
 html.fixed {
@@ -72,6 +80,9 @@ header.visible {
 	position: absolute;
 	z-index: 99;
 	display: block;
+}
+.wrapper {
+	background-color: #fff;
 }
 .logo img {
 	width: 100%;
@@ -473,9 +484,9 @@ section {
 
 // TESTIMONIALS
 .testimonial {
-	background-image: url(../img/infinity_pool.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
+	background-color: #333;
 }
 .testimonial::before {
 	position: absolute;
@@ -485,6 +496,9 @@ section {
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, .75);
+}
+.testimonial.no-bg-img::before {
+	display: none;
 }
 .testimonial p {
 	font-style: italic;

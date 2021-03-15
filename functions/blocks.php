@@ -20,6 +20,9 @@ function misha_allowed_block_types( $allowed_blocks ) {
 		'acf/variable-columns',
 		'acf/carousel',
 		'acf/grid',
+		'acf/testimonial',
+		'acf/cta',
+		'acf/before-after',
 	);
  
 }
