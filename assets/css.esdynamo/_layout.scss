@@ -10,3 +10,6 @@
 	padding-right: .25rem;
 	padding-bottom: .5rem;
 }
+.reverse-even > .row:nth-of-type(odd) {
+	flex-direction: row-reverse;
+}

@@ -1,0 +1,23 @@
+.col ul.service_icons {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0 0 2em;
+}
+.service_icons li {
+	flex: 0 0 40px;
+	max-width: 40px;
+	margin: 0 25px;
+}
+.service_icons li img {
+	height: 100%;
+}
+.page_header .col_inner {
+	padding: 4em;
+	display: flex;
+	flex-direction: column;
+}
+.page_header .col_inner h2 {
+	margin-top: auto;
+}

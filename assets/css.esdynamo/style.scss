@@ -22,6 +22,8 @@ $brand_red: #db4934;
 @import "_layout.scss";
 // BUTTONS
 @import "_buttons.scss";
+// SERVIces
+@import "_services.scss";
 
 * {
 	-webkit-box-sizing: border-box;
@@ -50,10 +52,10 @@ header {
 .home header {
 	transform: translate(0, -100%);
 }
-header.visible.down {
+header.visible.down, header.down {
 	transform: translate(0, -100%);
 }
-header.visible.up {
+header.visible.up, header.up {
 	transform: translate(0, 0);
 }
 header.visible {
@@ -541,6 +543,9 @@ section {
 .padding-bottom-6em {
 	padding-bottom: 6em;
 }
+.padding-top-6em {
+	padding-top: 6em;
+}
 .margin-top-1em {
 	margin-top: 1em;
 }
@@ -564,6 +569,11 @@ section {
 .col_inner {
 	padding: 2em;
 	height: 100%;
+}
+.col_inner.col-align-items-center {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .col_inner.padding-3em {
 	padding: 3em;

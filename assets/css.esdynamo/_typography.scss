@@ -1,3 +1,14 @@
 .page_title {
 	text-align: center;
 }
+
+// UL
+ul {
+	padding: 0 0 0 20px;
+}
+.col ul:last-of-type {
+	margin-bottom: 0;
+}
+.col ul:last-of-type ~ p {
+	margin-top: 1em;
+}

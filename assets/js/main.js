@@ -44,6 +44,18 @@
 			addOverlay();
 		}
 		
+		// SMOOTH SCROLL AFTER PAGE LOAD
+		if ( window.location.hash ) scroll(0,0);
+		setTimeout( function() { scroll(0,0); }, 1);
+		
+		// SUB MENU TOGGLE BUTTON
+		$('.menuInner li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');
+		$('.sub-toggle').click(function(e) {
+			e.preventDefault();
+			$(this).siblings('.sub-menu').slideToggle();
+			$(this).children().toggleClass('is-active');
+		});
+		
 		// SEARCH BAR
 		function searchBarFunction() {
 			$('.search a').click(function(e) {
@@ -144,6 +156,22 @@
 			$(window).resize(function() {
 				heroHeight();
 			});
+			
+			// SMOOTH SCROLL AFTER PAGE LOAD
+			$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').on('click', function() {
+		        //e.preventDefault();
+		        $('html, body').animate({
+		            scrollTop: $($(this).attr('href')).offset().top + 'px'
+		        }, 1000);
+		    });
+		
+		    if(window.location.hash) {
+		
+		        // smooth scroll to the anchor id
+		        $('html, body').animate({
+		            scrollTop: $(window.location.hash).offset().top + 'px'
+		        }, 1000);
+		    }
 			
 			var $document = $(document);
 			//viewportHeight = $('.splash').height() / 2;

@@ -34,15 +34,18 @@ function my_acf_init() {
 		
 		// register splash block
 		acf_register_block(array(
-			'name'				=> 'feature',
-			'title'				=> __('Feature Section'),
-			'description'		=> __('Background image with text and button'),
+			'name'				=> 'image-text',
+			'title'				=> __('Image & Text Block'),
+			'description'		=> __('Two column split with image and content'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
-			'keywords'			=> array( 'background image', 'content', 'CTA' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'keywords'			=> array( 'two columns', 'content', 'image' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register grid block
@@ -128,15 +131,17 @@ function my_acf_init() {
 		
 		// register events block
 		acf_register_block(array(
-			'name'				=> 'promo-box',
-			'title'				=> __('Promotional Box'),
-			'description'		=> __('Boxed row with content and featured image'),
+			'name'				=> 'cta-button',
+			'title'				=> __('Call to action button'),
+			'description'		=> __('Button that links to page, external link or anchor link'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'images-alt',
-			'keywords'			=> array( 'image', 'promotional' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'icon'				=> 'button',
+			'keywords'			=> array( 'button', 'call to action' ),
+			'supports'			=> [
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register two third one third block
