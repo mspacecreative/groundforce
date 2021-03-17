@@ -3679,10 +3679,18 @@ section {
 		padding: 0;
 	}
 	
+	.page_header .col_inner {
+		padding: 1em 2em 4em;
+	}
+	
+	.service_section .col_inner {
+		padding: 0;
+	}
+	
 	.service_icons li {
-		flex: 0 0 46%;
-		max-width: 46%;
-		margin: 0 2% 2%;
+		flex: 0 0 50px;
+		max-width: 50px;
+		margin: 0 30px 30px;
 	}
 }
 
