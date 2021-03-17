@@ -1,0 +1,43 @@
+// FORM
+.subscribe_form {
+	align-items: flex-end;
+}
+.subscribe_form .col:first-of-type input {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid $brand_dark;
+	padding: 10px;
+	font-family: 'Mulish',sans-serif;
+	font-size: 13px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+.quote_form .col input, .quote_form .col textarea {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid $brand_dark;
+	padding: 10px;
+	font-family: 'Mulish',sans-serif;
+	margin-bottom: 2em;
+	font-size: 13px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+.quote_form .col textarea {
+	margin-bottom: 0;
+}
+.subscribe_form input[type=submit], .quote_form input[type=submit] {
+	border: 2px solid $brand_dark;
+	padding: 15px 20px 13px;
+	font-family: inherit;
+	color: $brand_dark;
+	font-size: 15px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+.quote_form input[type=submit] {
+	width: auto;
+	border-top: none;
+}

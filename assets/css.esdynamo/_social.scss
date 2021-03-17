@@ -1,0 +1,18 @@
+// SOCIAL MEDIA
+.social_media {
+	display: flex;
+}
+.social_media > li {
+	margin: 0 10px;
+}
+.social_media a {
+	width: 30px;
+    height: 30px;
+    background-color: rgba(255,255,255,.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_media a::after {
+	display: none;
+}

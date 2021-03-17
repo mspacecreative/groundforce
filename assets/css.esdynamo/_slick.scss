@@ -371,3 +371,24 @@
 .view-all-work .slick-next::before {
 	transform: rotate(180deg);
 }
+
+// CAROUSEL	
+.carousel {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.carousel_img {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: none;
+}
+.slick-track, .slick-list {
+	height: 100%;
+}

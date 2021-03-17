@@ -1,0 +1,72 @@
+$brand_light_grey: #EAEAEA;
+$brand_dark: #4D4D4D;
+$brand_red: #db4934;
+
+// NORMALIZE
+@import "_normalize.min.scss";
+
+// DEFAULT STYLES
+@import "_main.scss";
+
+// FORM
+@import "_form.scss";
+
+// FLEXBOX
+@import "_flexboxgrid.min.scss";
+
+// SLICK
+@import "_slick.scss";
+
+// IMAGES
+@import "_images.scss";
+
+// FOOTER
+@import "_footer.scss";
+
+// TYPOGRAPHY
+@import "_typography.scss";
+
+// HAMBURGER
+@import "_hamburgers.scss";
+
+// NAV
+@import "_nav.scss";
+
+// SEARCH
+@import "_search.scss";
+
+// LAYOUT
+@import "_layout.scss";
+
+// BEFORE + AFTER
+@import "_before-after.scss";
+
+// TESTIMONIALS
+@import "_testimonials.scss";
+
+// INSTAGRAM
+@import "_instagram.scss";
+
+// SOCIAL
+@import "_social.scss";
+
+// BUTTONS
+@import "_buttons.scss";
+
+// SERVICES
+@import "_services.scss";
+
+// HEADER STYLES
+@import "_header.scss";
+
+// HERO
+@import "_hero.scss";
+
+// CTA BLOCK
+@import "_cta.scss";
+
+// FLEXBOX CUSTOM STYLES
+@import "_flexbox.scss";
+
+// MEDIA QUERIES
+@import "_media-queries.scss";

@@ -73,6 +73,7 @@ switch ( $colcount ) {
 				$title = get_the_title($post->ID);
 				$excerpt = get_the_excerpt($post->ID);
 				$icon = get_field('icon', $post->ID);
+				$showcta = get_field('show_cta', $post->ID);
 				//$content = get_field('content');
 				//$cta = get_field('cta'); ?>
 				
@@ -89,6 +90,10 @@ switch ( $colcount ) {
 					} ?>
 					<?php if ( $excerpt ) {
 						echo '<p>' . $excerpt . '</p>';
+					}
+					
+					if ( $showcta ) {
+						include 'includes/services-cta.php';
 					} ?>
 					</div>
 				</div>

@@ -22,7 +22,7 @@
 	
 			<div class="col_inner">
 				<h3 style="margin-bottom: 0;"><?php echo $title ?></h3>
-				<p class="date"><?php echo $date ?></p>
+				<!--<p class="date"><?php echo $date ?></p>-->
 				<p class="excerpt"><?php echo $blurb ?></p>
 				<p class="inline">
 					<?php if ( $newsletter ) : ?>

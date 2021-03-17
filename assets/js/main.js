@@ -44,6 +44,9 @@
 			addOverlay();
 		}
 		
+		// PUSHSTATE
+		
+		
 		// SMOOTH SCROLL AFTER PAGE LOAD
 		if ( window.location.hash ) scroll(0,0);
 		setTimeout( function() { scroll(0,0); }, 1);
@@ -58,7 +61,7 @@
 		
 		// SEARCH BAR
 		function searchBarFunction() {
-			$('.search a').click(function(e) {
+			$('.search-icon a').click(function(e) {
 				e.preventDefault();
 				searchBar.toggleClass('show');
 				$('html').addClass('fixed');
@@ -192,6 +195,19 @@
 						el.removeClass("expand");
 				    }
 				});
+				
+				// CHANGE URL BASED ON SECTION IN VIEW
+				/*
+				$(".service_section").each(function(i, el) {
+				    var el = $(el),
+						elID = el.attr('id');
+				    if (el.visible(true)) {
+						window.history.pushState('',"",'/services/' + elID);
+				    } else {
+						window.history.replaceState();
+				    }
+				});
+				*/
 			});
 			
 			// ANIMATE ON SCROLL

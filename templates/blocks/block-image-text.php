@@ -54,7 +54,7 @@ if ( $contenttype === 'custom' ) {
 		$icon = get_field('icon', $post->ID);
 						
 		echo '
-		<div id="' . $anchorid . '" class="' . $row . '">
+		<div id="' . $anchorid . '" class="' . $row . __(' service_section') . '">
 			<div class="' . $col . '">';
 					
 			if ( !empty($featuredimg) ) {

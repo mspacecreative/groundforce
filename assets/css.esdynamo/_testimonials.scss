@@ -1,0 +1,29 @@
+// TESTIMONIALS
+.testimonial {
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-color: #333;
+}
+.testimonial::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .75);
+}
+.testimonial.no-bg-img::before {
+	display: none;
+}
+.testimonial p {
+	font-style: italic;
+	line-height: 2.25em;
+}
+.testimonial .col:nth-of-type(2) {
+	border-left: 1px solid rgba(255, 255, 255, .65);
+}
+
+.grey_bg {
+	background-color: $brand_light_grey;
+}

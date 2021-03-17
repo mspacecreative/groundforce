@@ -1,7 +1,7 @@
 <!-- header -->
 <header>
 	<div class="inner_container">
-		<div class="search">
+		<div class="search-icon">
 			<a href="#">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/search.svg">
 			</a>

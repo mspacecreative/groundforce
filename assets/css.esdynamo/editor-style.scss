@@ -1,0 +1,247 @@
+@import "_combine.scss";
+
+body .interface-interface-skeleton__sidebar h2::after {
+	display: none;
+}
+
+// BLOCKQUOTE
+blockquote {
+	margin: 0 0 1em;
+    color: #333;
+}
+blockquote p {
+	font-size: 22px;
+	font-style: italic;
+	font-weight: 500;
+}
+
+// ACCORDION SECTION
+.editor-styles-wrapper .light_blue_bg, .editor-styles-wrapper #our-strategy {
+	background-color: #e8f3fa;
+}
+
+// CTAs
+.innerContainer a.learn_more {
+	position: relative;
+	padding-left: 50px;
+	color: #333;
+	margin-top: 30px;
+	display: inline-block;
+}
+.learn_more::before {
+	position: absolute;
+	content: "\f105";
+	font-family: fontAwesome;
+	top: 50%;
+	margin-top: -20px;
+	left: 0;
+	height: 40px;
+	width: 40px;
+	
+	border-radius: 100%;
+	color: #333;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+	font-weight: 800;
+}
+.interface-interface-skeleton__content {
+	overflow-x: hidden!important;
+}
+
+// TEXT COLOUR
+.blue_text {
+	color: #333;
+}
+.yellow_text {
+	
+}
+
+body .editor-styles-wrapper h1,
+body .editor-styles-wrapper h2,
+body .editor-styles-wrapper h3 {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body .editor-styles-wrapper h2 {
+	font-weight: 300;
+	font-size: 26px;
+}
+body .editor-styles-wrapper h3 {
+	font-weight: 200;
+	font-size: 23px;
+	margin-bottom: 1em;
+}
+
+body .editor-styles-wrapper p {
+	font-family: 'Mulish', sans-serif;
+}
+
+// INTERSTATE REG
+%interstateReg {
+	font-family: interstate, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+// INTERSTATE BOLD
+%interstateBold {
+	font-family: interstate, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+// LEARN MORE BADGE
+.editor-styles-wrapper .learn_more_badge {
+	
+	max-width: 350px;
+	padding: 2.25em;
+	margin-top: 2em;
+}
+.editor-styles-wrapper .learn_more_badge .row {
+	margin-right: -10px;
+	margin-left: -10px;
+}
+.editor-styles-wrapper .learn_more_badge .col {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.editor-styles-wrapper .learn_more_badge a {
+	text-decoration: underline;
+	color: #333;
+}
+.editor-styles-wrapper .learn_more_badge.bleed {
+	float: right;
+	max-width: 300px;
+	padding: 2.25em;
+	margin: 50px 0 0;
+	border-radius: 12px 0 0 12px;
+	position: absolute;
+    right: 0;
+    bottom: 4em;
+	z-index: 10;
+}
+.editor-styles-wrapper .learn_more_badge.bleed p, .learn_more_badge p {
+	
+	//font-size: 15px;
+	font-weight: 500;
+}
+
+// LOGO GRID
+.editor-styles-wrapper .logo_grid img {
+	max-width: 200px;
+}
+
+// HERO STYLES
+.hero {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 500px;
+	position: relative;
+	overflow: visible;
+}
+.hero .innerContainer {
+	display: flex;
+	padding: 0 2em;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+	height: 100%;
+    width: 50%;
+}
+.heroContentBox {
+	z-index: 1;
+}
+.hero .carouselContainer img {
+	width: 100%;
+}
+.editor-styles-wrapper #about-emera {
+	background-color: #333;
+}
+.editor-styles-wrapper #about-emera .row {
+	align-items: center;
+}
+.editor-styles-wrapper #about-emera p, .editor-styles-wrapper #about-emera h1 {
+	color: #fff;
+}
+.hero h1 {
+	@extend %interstateBold;
+	color: #fff;
+	font-size: 53px;
+	line-height: 1.35em;
+	margin-bottom: 25px;
+	padding-bottom: 0;
+}
+.hero h1::after, 
+.editor-styles-wrapper .carousel_hero > div, 
+.editor-styles-wrapper .about_emera_carousel > div {
+	display: none;
+}
+.editor-styles-wrapper .carousel_hero > div:first-of-type,
+.editor-styles-wrapper .about_emera_carousel > div:first-of-type {
+	display: block;
+}
+.hero p {
+	color: #fff;
+	font-size: 28px;
+}
+.carouselContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-bottom: 20px solid #333;
+}
+.carouselContainer > img {
+	width: 100%;
+	//top: 50%;
+    //transform: translateY(-50%);
+	object-fit: cover;
+}
+.read_more {
+	position: absolute;
+	bottom: -10px;
+	width: 40px;
+	height: 40px;
+	left: 50%;
+	margin-left: -20px;
+	
+	border-radius: 50px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.read_more a {
+	display: flex;
+}
+
+body {
+	font-family: interstate, sans-serif;
+}
+h1, h2 {
+	font-family: interstate, sans-serif;
+}
+.components-resizable-box__container {
+	width: 100%!important;
+	height: auto!important;
+}
+.hero .read_more ~ p {
+	text-align: center;
+	margin-top: 15px;
+}
+.wp-block[data-align=center]>.wp-block-image {
+    display: block;
+}
+.components-resizable-box__container.has-show-handle .components-resizable-box__handle {
+	
+}
+@media (min-width: 782px) {
+	.interface-interface-skeleton__sidebar .interface-complementary-area {
+	    width: 300px!important;
+	}
+}
