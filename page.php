@@ -18,7 +18,7 @@ $hidepageheader = get_field('hide_page_header'); ?>
 	<?php if ( !$hidepageheader ): ?>
 	<div class="inner_container">
 		
-		<div class="row no_gutters light_grey_bg middle-lg middle-md page_header">
+		<div class="row no_gutters light_grey_bg page_header">
 			<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			<?php 
 			if ( !empty($featuredimg) ) {

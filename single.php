@@ -15,7 +15,7 @@ if ( have_posts() ) { ?>
 	$content = apply_filters( 'the_content', get_the_content() ); ?>
 	
 	<div class="inner_container">
-		<div class="row no_gutters light_grey_bg middle-lg middle-md">
+		<div class="row no_gutters light_grey_bg">
 			<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<img data-object-fit="cover" src="<?php echo $featuredimg ?>" class="object-fit" alt="<?php echo $imgalt ?>">
 			</div>
