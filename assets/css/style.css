@@ -3778,6 +3778,14 @@ header.shrink .logo img {
 	width: 100%;
 }
 
+.inner_container_800 {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 30px;
+	width: 100%;
+}
+
 header .inner_container {
 	display: flex;
 	flex-wrap: wrap;
