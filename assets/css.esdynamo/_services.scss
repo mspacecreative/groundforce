@@ -18,9 +18,10 @@
 	padding: 4em;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 .page_header .col_inner h2 {
-	margin-top: auto;
+	//margin-top: auto;
 }
 
 @media (min-width: 64em) {

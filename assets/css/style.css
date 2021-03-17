@@ -3658,10 +3658,7 @@ section {
 	padding: 4em;
 	display: flex;
 	flex-direction: column;
-}
-
-.page_header .col_inner h2 {
-	margin-top: auto;
+	justify-content: center;
 }
 
 @media (min-width: 64em) {
