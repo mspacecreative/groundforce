@@ -372,3 +372,4 @@ include 'functions/blocks.php';
 include 'functions/image.php';
 include 'functions/lightbox.php';
 include 'functions/cpt-query.php';
+include 'functions/featuredimage.php';
