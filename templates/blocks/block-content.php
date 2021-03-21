@@ -27,7 +27,7 @@ switch ( $bgcolor ) {
 		$bg = '';
 } ?>
 
-<div<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '" '; endif; ?>class="<?php if ( $bg ): echo $bg; echo ' '; endif; if ( $bgimg ): echo 'bg-img-cover'; endif; if ( $tint ): echo ' '; echo $tint; echo ' '; endif; ?>content-section"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; endif; ?>">
+<div<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '" '; endif; ?> class="<?php if ( $bg ): echo $bg; echo ' '; endif; if ( $bgimg ): echo 'bg-img-cover'; endif; if ( $tint ): echo ' '; echo $tint; echo ' '; endif; ?>content-section"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; endif; ?>">
 	
 	<div class="bullet-points inner_container<?php if ( $width ): echo ' maxWidth850'; endif; ?>">
 		<?php include('includes/section-content-loop.php'); ?>
