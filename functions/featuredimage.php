@@ -1,6 +1,6 @@
 <?php 
 function featuredImage() {
-	$hidepageheader = get_field('hide_page_header');
+	$hidepageheader = get_field('hide_page_header', $post->ID);
 	$featuredimg = get_the_post_thumbnail_url( $post->ID, 'large' ); 
 	$featuredimgfull = get_the_post_thumbnail_url( $post->ID, 'full' );
 	$defaultimg = get_template_directory_uri() . '/assets/img/placeholders/front-garden.jpg';
