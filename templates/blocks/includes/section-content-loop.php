@@ -5,13 +5,13 @@ $txtalign = get_field('text_alignment');
 
 switch ( $padding ) {
 	case 'top':
-		$space = 'topPadding';
+		$space = 'padding-top-6em';
 		break;
 	case 'bottom':
-		$space = 'bottomPadding';
+		$space = 'padding-bottom-6em';
 		break;
 	case 'both':
-		$space = 'topBottomPadding';
+		$space = 'padding-6em';
 		break;
 	default:
 		$space = '';
