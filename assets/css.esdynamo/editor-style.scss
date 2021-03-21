@@ -1,5 +1,9 @@
 @import "_combine.scss";
 
+html {
+	background-color: #fff;
+}
+
 body .interface-interface-skeleton__sidebar h2::after {
 	display: none;
 }
