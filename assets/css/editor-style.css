@@ -3384,8 +3384,12 @@ header.shrink .inner_container {
 }
 */
 
-html {
+.editor-styles-wrapper html {
 	background-color: #fff;
+}
+
+.editor-styles-wrapper body {
+	margin: 9px 10px;
 }
 
 body .interface-interface-skeleton__sidebar h2::after {
