@@ -1,7 +1,7 @@
 <?php 
 function featuredImage($size) {
-	$result = $size;
-	$featuredimg = get_the_post_thumbnail_url( $post->ID, $result );
+	$resultingsize = $size;
+	$featuredimg = get_the_post_thumbnail_url( $post->ID, $resultingsize );
 	$defaultimg = get_template_directory_uri() . '/assets/img/placeholders/front-garden.jpg';
 	
 	if ( !empty($featuredimg) ) {
