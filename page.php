@@ -40,7 +40,7 @@ $hidepageheader = get_field('hide_page_header'); ?>
 		</div>
 		
 	<?php else:
-	featuredImage('full');
+	featuredImage('page-header');
 	endif; ?>
 		
 	</div>

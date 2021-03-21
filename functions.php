@@ -31,6 +31,7 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_image_size( 'lrg-square', 600, 600, true );
     add_image_size( 'med-square', 400, 400, true );
     add_image_size( 'image-tile', 600, 440, true );
+    add_image_size( 'page-header', 1080, 607, true );
 
     // Enables post and comment RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
