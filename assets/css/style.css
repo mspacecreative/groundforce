@@ -2836,6 +2836,11 @@ ul {
 	top: 9px;
 }
 
+.actions {
+	list-style: none;
+	padding: 0;
+}
+
 p, a, ul {
 	font-family: 'Mulish', sans-serif;
 	line-height: 1.75em;
