@@ -5,7 +5,7 @@ function featuredImage($size) {
 	$defaultimg = get_template_directory_uri() . '/assets/img/placeholders/front-garden.jpg';
 	
 	if ( !empty($featuredimg) ) {
-		echo '<img data-object-fit="cover" src="' . $featuredimg . '" class="object-fit" alt="'; if ($imgalt) { echo $imgalt } else { echo __('Ground Force Property Services') } . '">';
+		echo '<img data-object-fit="cover" src="' . $featuredimg . '" class="object-fit" alt="' . $imgalt . '">';
 	} else {
 		echo '<img data-object-fit="cover" src="' . $defaultimg . '" class="object-fit" alt="' . __('Ground Force Property Services') . '">';
 	}
