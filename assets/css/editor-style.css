@@ -1910,7 +1910,9 @@ p, a, ul {
 
 h2 {
 	font-weight: 300;
-	font-size: 26px;
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
 }
 
 h3 {
