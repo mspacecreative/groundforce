@@ -18,7 +18,7 @@ $content = apply_filters( 'the_content', get_the_content() ); ?>
 		
 		<div class="row no_gutters light_grey_bg page_header">
 			<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<?php featuredImage(); ?>
+			<?php featuredImage('large'); ?>
 			</div>
 			
 			<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -39,7 +39,7 @@ $content = apply_filters( 'the_content', get_the_content() ); ?>
 		</div>
 		
 	<?php else:
-	featuredImage();
+	featuredImage('full');
 	endif; ?>
 		
 	</div>
