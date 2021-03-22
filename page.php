@@ -8,7 +8,7 @@ $content = apply_filters( 'the_content', get_the_content() );
 $hidepageheader = get_field('hide_page_header'); ?>
 
 <div id="main-content">
-	<div class="innerContainer">
+	<div class="inner_container">
 	 	<h1 class="page_title"><?php echo $title ?></h1>
 	</div>
 		
