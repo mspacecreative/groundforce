@@ -7,13 +7,13 @@ function loopPages() {
 }
 add_shortcode( 'loop_pages', 'loopPages' );
 
-// LOOP NEWS
-function loopNews() {
+// LOOP PROJECTS
+function loopProjects() {
 	ob_start();
-		get_template_part('templates/loops/loop-news');
+		get_template_part('templates/loops/loop-projects');
 	return ob_get_clean();
 }
-add_shortcode( 'news_feed', 'loopNews' );
+add_shortcode( 'loop_projects', 'loopProjects' );
 
 // LOOP POSTS IN SIDEBAR
 function loopNewsSidebar() {
