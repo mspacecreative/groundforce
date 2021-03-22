@@ -23,8 +23,8 @@ $heading = get_field('heading'); ?>
 			// VARIABLES
 			$featuredimg = get_the_post_thumbnail_url( get_the_ID(), 'large' );
 			$imgalt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
-			$title = get_the_title($post->ID);
-			$excerpt = get_the_excerpt($post->ID); ?>
+			$title = get_the_title(get_the_ID());
+			$excerpt = get_the_excerpt(get_the_ID()); ?>
 			
 			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<img src="<?php echo $featuredimg ?>" alt="<?php if ( $imgalt ): echo $imgalt; else: echo bloginfo('name'); endif; ?>">
