@@ -20,7 +20,7 @@ if ( have_rows('cta', $post->ID) ):
 	endif; ?> class="button">
 	<?php 
 	if ( $label ): echo $label; 
-	else: echo esc_html_e('Learn more'); 
+	else: echo esc_html_e('learn more'); 
 	endif; ?>
 	</a>
 							
