@@ -39,7 +39,7 @@ $hidepageheader = get_field('hide_page_header'); ?>
 		
 	</div>
 	
-	<?php else: ?>
+	<?php elseif ( $featuredimg || $defaultimg ): ?>
 	<div class="inner_container">
 	
 		<?php featuredImage('anamorphic');?>
