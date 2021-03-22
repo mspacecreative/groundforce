@@ -18,6 +18,7 @@ li::before {
 	position: absolute;
 	left: 0;
 	text-indent: -15px;
+	color: $brand_red;
 }
 .col ul:last-of-type {
 	margin-bottom: 0;
