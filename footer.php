@@ -30,9 +30,9 @@
 						<div class="row">
 							<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 								<ul class="footer_links">
-									<li>908 Herring Cove Road</li>
-									<li>Halifax NS B3R 1Z6</li>
-									<li>(902) 209 2748</li>
+									<li>671 Old Sambro Road</li>
+									<li>Harrietsfield, NS B3V 1A2</li>
+									<li>(902) 209-2748</li>
 								</ul>
 							</div>
 							<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
