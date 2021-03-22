@@ -25,6 +25,7 @@ function misha_allowed_block_types( $allowed_blocks ) {
 		'acf/before-after',
 		'acf/image-text',
 		'acf/cta-button',
+		'acf/slider',
 	);
  
 }
