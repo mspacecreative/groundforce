@@ -4,7 +4,6 @@
 $title = get_the_title();
 $headertitle = get_field('header_title');
 $intro = get_field('intro_copy');
-$imgalt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
 $content = apply_filters( 'the_content', get_the_content() );
 $hidepageheader = get_field('hide_page_header'); ?>
 

@@ -189,13 +189,18 @@ html.menOpen, body.menuOpen {
 .socialButtons li {
 	padding: 10px;
 }
+.menuInner li {
+	margin-left: 0;
+}
 .menuInner li::marker {
 	height: 0;
 	width: 0;
 	font-size: 0;
 }
 .menuInner a {
-	font-size: 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Josefin Sans', sans-serif;
 }
 .menuInner > ul:first-of-type a {
 	color: #fff;

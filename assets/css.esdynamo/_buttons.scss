@@ -18,4 +18,10 @@
 	margin-top: 1em;
 	position: relative;
 	font-family: 'Josefin Sans', sans-serif;
+	transition: .25s ease-in-out;
+}
+.button:hover {
+	transition: .25s ease-in-out;
+	background-color: $brand_dark;
+	color: #fff;
 }
