@@ -3222,7 +3222,7 @@ header.shrink .inner_container {
 }
 
 .flex-direction-column-center.col_inner .button {
-	align-items: center;
+	align-self: center;
 }
 
 .inner_container.offset {
