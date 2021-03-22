@@ -26,8 +26,8 @@ $heading = get_field('heading'); ?>
 			$title = get_the_title(get_the_ID());
 			$excerpt = get_the_excerpt(get_the_ID()); ?>
 			
-			<a href="<?php the_permalink(); ?>">
-				<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<a href="<?php the_permalink(); ?>">
 					<img src="<?php echo $featuredimg ?>" alt="<?php if ( $imgalt ): echo $imgalt; else: echo bloginfo('name'); endif; ?>">
 					
 					<?php if ( $title ): ?>
@@ -38,8 +38,8 @@ $heading = get_field('heading'); ?>
 					<p><?php echo $excerpt ?></p>
 					<?php endif; ?>
 					
-				</div>
-			</a>
+				</a>
+			</div>
 			
 			<?php endwhile; ?>
 		</div>
