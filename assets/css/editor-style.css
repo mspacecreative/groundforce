@@ -1790,6 +1790,10 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	height: 100%;
 }
 
+.col img {
+	width: 100%;
+}
+
 footer {
 	background-color: #4D4D4D;
 }

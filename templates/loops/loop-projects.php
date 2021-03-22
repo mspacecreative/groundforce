@@ -18,7 +18,7 @@
 		$title = get_the_title(get_the_ID());
 		$excerpt = get_the_excerpt(get_the_ID()); ?>
 		
-		<div class="row no_gutters">
+		<div class="row no_gutters margin_bottom_2em">
 			
 			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<img src="<?php echo $featuredimg ?>" alt="<?php if ( $imgalt ): echo $imgalt; else: echo bloginfo('name'); endif; ?>">
@@ -28,7 +28,7 @@
 				
 				<div class="col_inner grey_bg">
 					<?php if ( $title ): ?>
-					<h4><?php echo $title ?></h4>
+					<h2><?php echo $title ?></h2>
 					<?php endif; ?>
 						
 					<?php if ( $excerpt ): ?>
