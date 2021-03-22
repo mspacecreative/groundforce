@@ -21,7 +21,7 @@ $heading = get_field('heading'); ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post();
 			
 			// VARIABLES
-			$featuredimg = get_the_post_thumbnail_url( get_the_ID(), 'large' );
+			$featuredimg = get_the_post_thumbnail_url( get_the_ID(), 'image-tile' );
 			$imgalt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
 			$title = get_the_title(get_the_ID());
 			$excerpt = get_the_excerpt(get_the_ID()); ?>
