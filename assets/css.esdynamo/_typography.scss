@@ -6,6 +6,12 @@
 // UL
 ul {
 	padding: 0 0 0 20px;
+	list-style: none;
+}
+li::before {
+	font-family: fontAwesome;
+	content: "\f0da";
+	text-indent: -20px;
 }
 .col ul:last-of-type {
 	margin-bottom: 0;
