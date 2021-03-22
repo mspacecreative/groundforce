@@ -10,7 +10,7 @@ $heading = get_field('heading'); ?>
 		
 		$args = array(
 			'post_type' => 'project',
-			'posts_per_page' => -11,
+			'posts_per_page' => -1,
 		);
 			
 		$loop = new WP_Query( $args );
