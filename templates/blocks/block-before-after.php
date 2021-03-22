@@ -17,7 +17,12 @@ setup_postdata($beforeafter);
 $heading = get_field('heading');
 $sub = get_field('sub_heading');
 $beforeimg = get_field('before_image', $beforeafter);
+$size = 'image-tile';
+$thumbbefore = $beforeimg['sizes'][ $size ];
+$altbefore = $beforeimg['alt'];
 $afterimg = get_field('after_image', $beforeafter);
+$thumbbafter = $aftereimg['sizes'][ $size ];
+$altafter = $afterimg['alt'];
 $content = get_field('body_copy'); ?>
 
 <section id="<?php echo esc_attr($id); ?>" class="padding-6em<?php echo ' '; echo esc_attr($className); ?>">
@@ -35,7 +40,7 @@ $content = get_field('body_copy'); ?>
 			<div class="col col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				
 				<?php if ( !empty( $beforeimg ) ): ?>
-				<img data-object-fit="cover" src="<?php echo esc_url($beforeimg['url']); ?>" alt="<?php echo esc_attr($beforeimg['alt']); ?>" class="object-fit">
+				<img data-object-fit="cover" src="<?php echo esc_url($thumbbefore); ?>" alt="<?php echo esc_attr($altbefore); ?>" class="object-fit">
 				<?php endif; ?>
 				
 				<p class="before"><?php echo esc_html_e('before'); ?></p>
@@ -60,7 +65,7 @@ $content = get_field('body_copy'); ?>
 			<div class="col col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				
 				<?php if ( !empty( $afterimg ) ): ?>
-				<img data-object-fit="cover" src="<?php echo esc_url($afterimg['url']); ?>" alt="<?php echo esc_attr($afterimg['alt']); ?>" class="object-fit">
+				<img data-object-fit="cover" src="<?php echo esc_url($thumbbafter); ?>" alt="<?php echo esc_attr($altafter); ?>" class="object-fit">
 				<?php endif; ?>
 				
 				<p class="after"><?php echo esc_html_e('after'); ?></p>
