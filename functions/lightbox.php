@@ -9,7 +9,7 @@ function lightBox() {
 		
 		echo '
 		<div class="inner_container padding-6em">
-			<div class="row narrow_gutters">';
+			<div class="row narrow_gutters center-lg center-md center-sm center-xs">';
 			
 			foreach( $images as $image ) {
 			
