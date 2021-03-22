@@ -1794,6 +1794,14 @@ footer {
 	background-color: #4D4D4D;
 }
 
+footer li {
+	margin-left: 0;
+}
+
+footer li::before {
+	display: none;
+}
+
 .footer_links {
 	padding: 0;
 	list-style: none;
@@ -2718,6 +2726,10 @@ section {
 	flex: 0 0 40px;
 	max-width: 40px;
 	margin: 0 25px 25px;
+}
+
+.service_icons li::before {
+	display: none;
 }
 
 .service_icons li img {

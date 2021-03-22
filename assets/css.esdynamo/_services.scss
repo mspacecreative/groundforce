@@ -11,6 +11,9 @@
 	max-width: 40px;
 	margin: 0 25px 25px;
 }
+.service_icons li::before {
+	display: none;
+}
 .service_icons li img {
 	height: 100%;
 }

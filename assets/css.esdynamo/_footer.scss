@@ -2,6 +2,12 @@
 footer {
 	background-color: $brand_dark;
 }
+footer li {
+	margin-left: 0;
+}
+footer li::before {
+	display: none;
+}
 .footer_links {
 	padding: 0;
 	list-style: none;
