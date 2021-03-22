@@ -3213,6 +3213,18 @@ header.shrink .inner_container {
 	margin-top: auto;
 }
 
+.flex-direction-column {
+	flex-direction: column;
+}
+
+.flex-direction-column-center {
+	flex-direction: column;
+}
+
+.flex-direction-column-center.col_inner .button {
+	align-items: center;
+}
+
 .inner_container.offset {
 	margin-right: 0;
 	padding-right: 0;

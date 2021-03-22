@@ -26,7 +26,7 @@
 			
 			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				
-				<div class="col_inner grey_bg">
+				<div class="col_inner grey_bg row no_gutters center-lg center-md center-sm center-xs middle-lg middle-md middle-sm middle-xs flex-direction-column-center">
 					<?php if ( $title ): ?>
 					<h2><?php echo $title ?></h2>
 					<?php endif; ?>

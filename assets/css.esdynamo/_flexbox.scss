@@ -57,6 +57,16 @@
 	margin-top: auto;
 }
 
+.flex-direction-column {
+	flex-direction: column;
+}
+.flex-direction-column-center {
+	flex-direction: column;
+}
+.flex-direction-column-center.col_inner .button {
+	align-items: center;
+}
+
 // OFFSET
 .inner_container.offset {
 	margin-right: 0;
