@@ -26,18 +26,20 @@ $heading = get_field('heading'); ?>
 			$title = get_the_title(get_the_ID());
 			$excerpt = get_the_excerpt(get_the_ID()); ?>
 			
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<img src="<?php echo $featuredimg ?>" alt="<?php if ( $imgalt ): echo $imgalt; else: echo bloginfo('name'); endif; ?>">
-				
-				<?php if ( $title ): ?>
-				<h4><?php echo $title ?></h4>
-				<?php endif; ?>
-				
-				<?php if ( $excerpt ): ?>
-				<p><?php echo $excerpt ?></p>
-				<?php endif; ?>
-				
-			</div>
+			<a href="<?php the_permalink(); ?>">
+				<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<img src="<?php echo $featuredimg ?>" alt="<?php if ( $imgalt ): echo $imgalt; else: echo bloginfo('name'); endif; ?>">
+					
+					<?php if ( $title ): ?>
+					<h4><?php echo $title ?></h4>
+					<?php endif; ?>
+					
+					<?php if ( $excerpt ): ?>
+					<p><?php echo $excerpt ?></p>
+					<?php endif; ?>
+					
+				</div>
+			</a>
 			
 			<?php endwhile; ?>
 		</div>
