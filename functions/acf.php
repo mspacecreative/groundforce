@@ -229,14 +229,17 @@ function my_acf_init() {
 		// register home page slider block
 		acf_register_block(array(
 			'name'				=> 'slider',
-			'title'				=> __('Partners Slider Section'),
-			'description'		=> __('Displays a logos in carousel'),
+			'title'				=> __('Slider Block'),
+			'description'		=> __('Displays post type in carousel'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
-			'keywords'			=> array( 'carousel', 'logos' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
+			'keywords'			=> array( 'carousel', 'slider' ),
+			'supports'			=> [
+				'align' => false,
+				'anchor' => true,
+				'customClassName' => true,
+			]
 		));
 		
 		// register content block

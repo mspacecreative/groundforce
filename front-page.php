@@ -28,57 +28,6 @@ get_header(); ?>
 			}
 		} ?>
 		
-		<section class="padding-6em recent-work no-horizontal-overflow">
-			<div class="inner_container ">
-				<h2 class="line-rule-right">
-					<span>recent work</span>
-				</h2>
-				<div class="work-carousel margin-top-2em">
-					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/driveway.jpg">
-						<h4>landscaping</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-					</div>
-					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/front-garden.jpg">
-						<h4>outdoor spaces</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-					</div>
-					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/snow-removal.jpg">
-						<h4>snow + ice control</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-					</div>
-					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/driveway.jpg">
-						<h4>landscaping</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-					</div>
-					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/driveway.jpg">
-						<h4>landscaping</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-					</div>
-					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/driveway.jpg">
-						<h4>outdoor spaces</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-					</div>
-					<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/driveway.jpg">
-						<h4>outdoor spaces</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-					</div>
-				</div>
-				<div class="row view-all-work">
-					<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-end margin-top-2em middle-lg middle-md">
-						<div class="append-arrows"></div>
-						<a href="#" class="button align-self-center">view all</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		
 		<!-- newsletter
 		<section class="cta padding-6em">
 			<div class="inner_container">
