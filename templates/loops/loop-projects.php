@@ -1,4 +1,4 @@
-<section class="padding-6em">
+<section>
 	<div class="inner_container ">
 		
 		<?php
@@ -18,7 +18,7 @@
 		$title = get_the_title(get_the_ID());
 		$excerpt = get_the_excerpt(get_the_ID()); ?>
 		
-		<div class="row no_gutters margin_bottom_2em">
+		<div class="row no_gutters" style="margin-bottom: 2em;">
 			
 			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<img src="<?php echo $featuredimg ?>" alt="<?php if ( $imgalt ): echo $imgalt; else: echo bloginfo('name'); endif; ?>">
