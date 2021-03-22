@@ -21,7 +21,7 @@ $size = 'image-tile';
 $thumbbefore = $beforeimg['sizes'][ $size ];
 $altbefore = $beforeimg['alt'];
 $afterimg = get_field('after_image', $beforeafter);
-$thumbbafter = $aftereimg['sizes'][ $size ];
+$thumbafter = $afterimg['sizes'][ $size ];
 $altafter = $afterimg['alt'];
 $content = get_field('body_copy'); ?>
 
@@ -65,7 +65,7 @@ $content = get_field('body_copy'); ?>
 			<div class="col col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				
 				<?php if ( !empty( $afterimg ) ): ?>
-				<img data-object-fit="cover" src="<?php echo esc_url($thumbbafter); ?>" alt="<?php echo esc_attr($altafter); ?>" class="object-fit">
+				<img data-object-fit="cover" src="<?php echo esc_url($thumbafter); ?>" alt="<?php echo esc_attr($altafter); ?>" class="object-fit">
 				<?php endif; ?>
 				
 				<p class="after"><?php echo esc_html_e('after'); ?></p>
