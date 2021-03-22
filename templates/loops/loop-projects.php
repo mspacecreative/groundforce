@@ -16,7 +16,7 @@
 		$featuredimg = get_the_post_thumbnail_url( get_the_ID(), 'image-tile' );
 		$imgalt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
 		$title = get_the_title(get_the_ID());
-		$excerpt = get_the_excerpt(get_the_ID()); ?> ?>
+		$excerpt = get_the_excerpt(get_the_ID()); ?>
 		
 		<div class="row no_gutters">
 			
@@ -26,15 +26,17 @@
 			
 			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				
-				<?php if ( $title ): ?>
-				<h4><?php echo $title ?></h4>
-				<?php endif; ?>
-					
-				<?php if ( $excerpt ): ?>
-				<p><?php echo $excerpt ?></p>
-				<?php endif; ?>
-					
-				<a href="<?php the_permalink(); ?>" class="button"><?php echo esc_html_e('view project'); ?></a>
+				<div class="col_inner grey_bg">
+					<?php if ( $title ): ?>
+					<h4><?php echo $title ?></h4>
+					<?php endif; ?>
+						
+					<?php if ( $excerpt ): ?>
+					<p><?php echo $excerpt ?></p>
+					<?php endif; ?>
+						
+					<a href="<?php the_permalink(); ?>" class="button"><?php echo esc_html_e('view project'); ?></a>
+				</div>
 				
 			</div>
 			
