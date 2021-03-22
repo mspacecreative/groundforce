@@ -37,8 +37,10 @@ $hidepageheader = get_field('hide_page_header'); ?>
 			</div>
 		</div>
 		
-	<?php else:
-	featuredImage('anamorphic');?>
+	<?php else: ?>
+	<div class="inner_container">
+	
+	<?php featuredImage('anamorphic');?>
 		
 	</div>
 	<?php endif; ?>
