@@ -2796,6 +2796,7 @@ footer {
 
 .page_title {
 	text-align: center;
+	font-weight: 300;
 }
 
 ul {
@@ -3636,7 +3637,7 @@ section {
 	color: #4D4D4D;
 	text-decoration: none;
 	font-size: 15px;
-	font-weight: 400;
+	font-weight: 300;
 	margin-top: 1em;
 	position: relative;
 	font-family: 'Josefin Sans', sans-serif;
