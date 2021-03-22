@@ -1847,14 +1847,20 @@ footer {
 }
 
 ul {
-	padding: 0 0 0 20px;
+	padding: 0;
 	list-style: none;
+}
+
+li {
+	margin-left: 15px;
+	position: relative;
 }
 
 li::before {
 	font-family: fontAwesome;
 	content: "\f0da";
-	text-indent: -20px;
+	position: absolute;
+	left: 0;
 }
 
 .col ul:last-of-type {

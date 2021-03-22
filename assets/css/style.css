@@ -2804,9 +2804,16 @@ ul {
 	list-style: none;
 }
 
+li {
+	margin-left: 15px;
+	position: relative;
+}
+
 li::before {
 	font-family: fontAwesome;
 	content: "\f0da";
+	position: absolute;
+	left: 0;
 	text-indent: -15px;
 }
 
