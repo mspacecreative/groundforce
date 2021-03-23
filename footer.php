@@ -12,15 +12,15 @@
 							<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 								<ul class="footer_links">
 									<li><a href="#">our history</a></li>
-									<li><a href="#">recent work</a></li>
-									<li><a href="#">testimonials</a></li>
+									<li><a href="<?php echo home_url('recent-work'); ?>">recent work</a></li>
+									<li><a href="#quote">request a quote</a></li>
 								</ul>
 							</div>
 							<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 								<ul class="footer_links">
-									<li><a href="#">landcaping</a></li>
-									<li><a href="#">outdoor spaces</a></li>
-									<li><a href="#">snow + ice control</a></li>
+									<li><a href="<?php echo home_url('services#landscaping'); ?>">landscaping</a></li>
+									<li><a href="<?php echo home_url('services#outdoor-spaces'); ?>">outdoor spaces</a></li>
+									<li><a href="<?php echo home_url('services#poolscapes'); ?>">poolscapes</a></li>
 								</ul>
 							</div>
 						</div>
