@@ -22,7 +22,7 @@
 		
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			
-			<div class="row no_gutters" style="margin-bottom: 2em;">
+			<div class="row no_gutters">
 					
 				<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<img src="<?php echo $featuredimg ?>" alt="<?php if ( $imgalt ): echo $imgalt; else: echo bloginfo('name'); endif; ?>">
@@ -32,7 +32,7 @@
 						
 					<div class="col_inner grey_bg row no_gutters center-lg center-md center-sm center-xs middle-lg middle-md middle-sm middle-xs flex-direction-column-center">
 						<?php if ( $title ): ?>
-						<h2><?php echo $title ?></h2>
+						<h2 class="small-h2"><?php echo $title ?></h2>
 						<?php endif; ?>
 								
 						<?php if ( $excerpt ): ?>

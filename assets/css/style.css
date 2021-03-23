@@ -2910,6 +2910,10 @@ h3 {
 	margin-bottom: 1em;
 }
 
+.small-h2 {
+	font-size: 18px;
+}
+
 .no-margin {
 	margin: 0;
 }
