@@ -1,10 +1,9 @@
 <section class="padding-6em recent-work no-horizontal-overflow">
 	<div class="inner_container ">
 		
-		<?php if ( $heading ): ?>
 		<h2 class="line-rule-right"><span><?php echo esc_html_e('other projects'); ?></span></h2>
-		<?php endif;
 		
+		<?php 
 		$args = array(
 			'post_type' => 'project',
 			'posts_per_page' => -1,
