@@ -2927,6 +2927,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
 }
 
 h1 ~ .button, h2 ~ .button, h3 ~ .button {
