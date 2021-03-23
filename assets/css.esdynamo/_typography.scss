@@ -69,10 +69,11 @@ p, a, ul {
 }
 
 .work-carousel h4 {
-	color: $brand_red;
+	//color: $brand_red;
 	margin-top: 1em;
     font-size: 13px;
     letter-spacing: .05em;
+	text-transform: uppercase;
 }
 .view-all-work {
 	width: 100%;

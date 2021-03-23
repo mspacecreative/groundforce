@@ -1934,6 +1934,7 @@ p, a, ul {
 	margin-top: 1em;
 	font-size: 13px;
 	letter-spacing: .05em;
+	text-transform: uppercase;
 }
 
 .view-all-work {
@@ -3187,6 +3188,10 @@ header.shrink .inner_container {
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
+}
+
+.display-flex {
+	display: flex;
 }
 
 .bottom_col_spacing {
