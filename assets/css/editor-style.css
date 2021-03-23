@@ -1861,6 +1861,14 @@ footer li::before {
 	text-transform: uppercase;
 }
 
+.work-carousel a {
+	text-decoration: none;
+}
+
+.work-carousel h4 {
+	text-transform: uppercase;
+}
+
 ul {
 	padding: 0;
 	list-style: none;

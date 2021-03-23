@@ -49,7 +49,7 @@ $heading = get_field('heading'); ?>
 		<div class="row view-all-work">
 			<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-end margin-top-2em middle-lg middle-md">
 				<div class="append-arrows"></div>
-				<a href="<?php echo home_url('projects'); ?>" class="button align-self-center"><?php echo esc_html_e('view all'); ?></a>
+				<a href="<?php echo home_url('recent-work'); ?>" class="button align-self-center"><?php echo esc_html_e('view all'); ?></a>
 			</div>
 		</div>
 	</div>
