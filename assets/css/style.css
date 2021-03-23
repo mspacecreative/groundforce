@@ -4142,6 +4142,10 @@ header.shrink .inner_container {
 	flex-direction: column;
 }
 
+.display-flex {
+	display: flex;
+}
+
 .bottom_col_spacing {
 	margin-bottom: 1em;
 }

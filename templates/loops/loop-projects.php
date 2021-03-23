@@ -20,7 +20,7 @@
 		$title = get_the_title(get_the_ID());
 		$excerpt = get_the_excerpt(get_the_ID()); ?>
 		
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 display-flex">
 			
 			<div class="row no_gutters bottom_col_spacing">
 					
