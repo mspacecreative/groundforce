@@ -3469,8 +3469,8 @@ header.shrink .inner_container {
 }
 */
 
-iframe html {
-	background-color: #fff;
+html {
+	background-color: #fff !important;
 }
 
 .editor-styles-wrapper body {
