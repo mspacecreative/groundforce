@@ -68,12 +68,14 @@ p, a, ul {
 	font-size: 15px;
 }
 
-.work-carousel h4 {
+.work-carousel a h4 {
 	color: $brand_dark;
 	margin-top: 1em;
     font-size: 13px;
     letter-spacing: .1em;
 	text-transform: uppercase;
+	font-weight: 300;
+	line-height: 1.25em;
 }
 .view-all-work {
 	width: 100%;
