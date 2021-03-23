@@ -17,7 +17,7 @@ $hidepageheader = get_field('hide_page_header'); ?>
 		
 		<div class="row no_gutters light_grey_bg page_header">
 			<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<?php featuredImage('large'); ?>
+			<?php featuredImage('page-header'); ?>
 			</div>
 			
 			<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
