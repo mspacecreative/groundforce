@@ -11,7 +11,7 @@
 						<div class="row">
 							<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 								<ul class="footer_links">
-									<li><a href="#">our history</a></li>
+									<li><a href="<?php echo home_url('careers'); ?>">careers</a></li>
 									<li><a href="<?php echo home_url('recent-work'); ?>">recent work</a></li>
 									<li><a href="#quote">request a quote</a></li>
 								</ul>
