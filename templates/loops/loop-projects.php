@@ -25,7 +25,7 @@
 			<div class="row no_gutters bottom_col_spacing">
 					
 				<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<img src="<?php echo $featuredimg ?>" alt="<?php if ( $imgalt ): echo $imgalt; else: echo bloginfo('name'); endif; ?>">
+					<img data-object-fit="cover" src="<?php echo $featuredimg ?>" alt="<?php if ( $imgalt ): echo $imgalt; else: echo bloginfo('name'); endif; ?>" class="object-fit">
 				</div>
 					
 				<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
