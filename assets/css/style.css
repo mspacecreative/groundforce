@@ -2883,9 +2883,10 @@ p, a, ul {
 }
 
 .work-carousel h4 {
+	color: #4D4D4D;
 	margin-top: 1em;
 	font-size: 13px;
-	letter-spacing: .05em;
+	letter-spacing: .1em;
 	text-transform: uppercase;
 }
 
