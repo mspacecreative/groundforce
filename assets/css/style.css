@@ -2823,12 +2823,12 @@ ul {
 	list-style: none;
 }
 
-li {
+section li {
 	margin-left: 15px;
 	position: relative;
 }
 
-li::before {
+section li::before {
 	font-family: fontAwesome;
 	content: "\f0da";
 	position: absolute;

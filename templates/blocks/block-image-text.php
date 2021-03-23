@@ -14,7 +14,7 @@ echo '
 			
 if ( $contenttype === 'custom' ) {
 	echo '
-	<div class="' . $row . '">
+	<section class="' . $row . '">
 		<div class="' . $col . '">';
 				
 			if ( !empty($featuredimg) ) {
@@ -36,7 +36,7 @@ if ( $contenttype === 'custom' ) {
 			echo '
 			</div>
 		</div>
-	</div>';
+	</section>';
 			
 } elseif ( $contenttype === 'post_type' ) {
 			
@@ -54,7 +54,7 @@ if ( $contenttype === 'custom' ) {
 		$icon = get_field('icon', $post->ID);
 						
 		echo '
-		<div id="' . $anchorid . '" class="' . $row . __(' service_section') . '">
+		<section id="' . $anchorid . '" class="' . $row . __(' service_section') . '">
 			<div class="' . $col . '">';
 					
 			if ( !empty($featuredimg) ) {
@@ -93,7 +93,7 @@ if ( $contenttype === 'custom' ) {
 				echo '
 				</div>
 			</div>
-		</div>';
+		</section>';
 		
 		} 
 	}

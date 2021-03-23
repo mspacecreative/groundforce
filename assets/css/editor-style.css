@@ -1870,12 +1870,12 @@ ul {
 	list-style: none;
 }
 
-li {
+section li {
 	margin-left: 15px;
 	position: relative;
 }
 
-li::before {
+section li::before {
 	font-family: fontAwesome;
 	content: "\f0da";
 	position: absolute;
@@ -1930,9 +1930,10 @@ p, a, ul {
 }
 
 .work-carousel h4 {
+	color: #4D4D4D;
 	margin-top: 1em;
 	font-size: 13px;
-	letter-spacing: .05em;
+	letter-spacing: .1em;
 	text-transform: uppercase;
 }
 
