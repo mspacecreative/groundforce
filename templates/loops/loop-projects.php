@@ -22,7 +22,7 @@
 		
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			
-			<div class="row no_gutters">
+			<div class="row no_gutters bottom_col_spacing">
 					
 				<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<img src="<?php echo $featuredimg ?>" alt="<?php if ( $imgalt ): echo $imgalt; else: echo bloginfo('name'); endif; ?>">
