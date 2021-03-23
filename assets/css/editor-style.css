@@ -1865,10 +1865,6 @@ footer li::before {
 	text-decoration: none;
 }
 
-.work-carousel h4 {
-	text-transform: uppercase;
-}
-
 ul {
 	padding: 0;
 	list-style: none;
@@ -1935,8 +1931,9 @@ p, a, ul {
 
 .work-carousel h4 {
 	color: #db4934;
-	margin-top: 1.5em;
-	font-size: 15px;
+	margin-top: 1em;
+	font-size: 13px;
+	letter-spacing: .05em;
 }
 
 .view-all-work {
