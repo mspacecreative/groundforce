@@ -11,6 +11,10 @@ body .editor-styles-wrapper {
 	font-family: interstate, sans-serif !important;
 }
 
+.editor-styles-wrapper html {
+	background-color: #fff;
+}
+
 .wp-block {
 	width: 100% !important;
 	max-width: none !important;
