@@ -2876,10 +2876,14 @@ section li::before {
 	padding: 0;
 }
 
-p, a, ul {
+p, a, ul, ol {
 	font-family: 'Mulish', sans-serif;
 	line-height: 1.75em;
 	font-size: 15px;
+}
+
+ol {
+	padding: 0 0 0 20px;
 }
 
 .work-carousel a h4 {
