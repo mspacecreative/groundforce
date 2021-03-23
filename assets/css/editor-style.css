@@ -3469,7 +3469,7 @@ header.shrink .inner_container {
 }
 */
 
-.editor-styles-wrapper html {
+iframe html {
 	background-color: #fff;
 }
 
