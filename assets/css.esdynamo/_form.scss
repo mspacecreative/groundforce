@@ -13,7 +13,10 @@
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
 }
-.quote_form .col input, .quote_form .col textarea, .careers_form .careers_field input, .careers_form .careers_field textarea {
+.quote_form .col input, .quote_form .col textarea, 
+.careers_form .careers_field input[type=text],
+.careers_form .careers_field input[type=email], 
+.careers_form .careers_field textarea {
 	width: 100%;
 	background-color: transparent;
 	border: none;
@@ -40,4 +43,7 @@
 .quote_form input[type=submit] {
 	width: auto;
 	border-top: none;
+}
+.careers_field .resume > input {
+	border-bottom: none;
 }
