@@ -3690,7 +3690,7 @@ section {
 	align-self: flex-start;
 }
 
-.button, .wpcf7-submit {
+.button, .careers_form input.wpcf7-submit {
 	display: inline-block;
 	padding: 15px 20px 13px;
 	line-height: 1;
@@ -3705,7 +3705,11 @@ section {
 	transition: .25s ease-in-out;
 }
 
-.button:hover {
+.wpcf7-submit {
+	background-color: transparent;
+}
+
+.button:hover, .careers_form input.wpcf7-submit {
 	transition: .25s ease-in-out;
 	background-color: #4D4D4D;
 	color: #fff;

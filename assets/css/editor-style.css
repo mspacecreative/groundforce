@@ -2737,7 +2737,7 @@ section {
 	align-self: flex-start;
 }
 
-.button {
+.button, .wpcf7-submit {
 	display: inline-block;
 	padding: 15px 20px 13px;
 	line-height: 1;
