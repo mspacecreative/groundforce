@@ -7,25 +7,7 @@
 			
 			<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 justify-content-end">
 				<div class="row quote_form">
-					<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<input type="text" name="" value="" placeholder="first name" />
-					</div>
-					
-					<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<input type="text" name="" value="" placeholder="last name" />
-					</div>
-					
-					<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<input type="email" name="" value="" placeholder="email address" />
-					</div>
-					
-					<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<textarea placeholder="message"></textarea>
-					</div>
-					
-					<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-end">
-						<input type="submit" name="" value="submit" />
-					</div>
+					<?php echo do_shortcode('[contact-form-7 id="5" title="Request a quote"]'); ?>
 				</div>
 			</div>
 		</div>
