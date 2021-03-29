@@ -50,8 +50,8 @@ $hidepageheader = get_field('hide_page_header'); ?>
 		 	the_post();
 		 	echo '
 		 	<div class="post_content">';
-				echo lightBox();
 				echo $content;
+				echo lightBox();
 				include 'templates/loops/loop-projects-single.php';
 			echo'
 			</div>';
