@@ -578,6 +578,13 @@ textarea {
 .quote_form {
 	display: flex;
 	flex-wrap: wrap;
+	margin-right: -1rem;
+	margin-left: -1rem;
+}
+
+.quote_form p {
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .form_timeline {
