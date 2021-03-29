@@ -6,7 +6,7 @@
 			</div>
 			
 			<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 justify-content-end">
-				<div class="row quote_form">
+				<div class="row">
 					<?php echo do_shortcode('[contact-form-7 id="5" title="Request a quote"]'); ?>
 				</div>
 			</div>
