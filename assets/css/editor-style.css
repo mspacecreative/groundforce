@@ -552,7 +552,7 @@ textarea {
 	border-radius: 0px;
 }
 
-.quote_form p textarea {
+.quote_form p textarea, .project_description {
 	margin-bottom: 0;
 }
 
@@ -578,6 +578,22 @@ textarea {
 .quote_form {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.form_timeline {
+	max-width: 60px;
+}
+
+.quote_form p:last-of-type {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+@media (min-width: 48em) {
+	.quote_form p {
+		flex: 0 0 50%;
+	}
 }
 
 .container, .container-fluid {

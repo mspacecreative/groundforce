@@ -28,7 +28,7 @@
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
 }
-.quote_form p textarea {
+.quote_form p textarea, .project_description {
 	margin-bottom: 0;
 }
 .subscribe_form input[type=submit], .quote_form input[type=submit] {
@@ -52,4 +52,17 @@
 .quote_form {
 	display: flex;
 	flex-wrap: wrap;
+}
+.form_timeline {
+	max-width: 60px;
+}
+.quote_form p:last-of-type {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+@media (min-width: 48em) {
+	.quote_form p {
+		flex: 0 0 50%;
+	}
 }
