@@ -13,7 +13,7 @@
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
 }
-.quote_form .col input, .quote_form .col textarea, 
+.quote_form p input, .quote_form p textarea, 
 .careers_form .careers_field input[type=text],
 .careers_form .careers_field input[type=email], 
 .careers_form .careers_field textarea {
@@ -28,7 +28,7 @@
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
 }
-.quote_form .col textarea {
+.quote_form p textarea {
 	margin-bottom: 0;
 }
 .subscribe_form input[type=submit], .quote_form input[type=submit] {
@@ -46,4 +46,10 @@
 }
 .careers_field .resume > input {
 	border-bottom: none;
+}
+
+// REQUEST A QUOTE
+.quote_form {
+	display: flex;
+	flex-wrap: wrap;
 }

@@ -1492,7 +1492,7 @@ textarea {
 	border-radius: 0px;
 }
 
-.quote_form .col input, .quote_form .col textarea, .careers_form .careers_field input[type=text], .careers_form .careers_field input[type=email], .careers_form .careers_field textarea {
+.quote_form p input, .quote_form p textarea, .careers_form .careers_field input[type=text], .careers_form .careers_field input[type=email], .careers_form .careers_field textarea {
 	width: 100%;
 	background-color: transparent;
 	border: none;
@@ -1505,7 +1505,7 @@ textarea {
 	border-radius: 0px;
 }
 
-.quote_form .col textarea {
+.quote_form p textarea {
 	margin-bottom: 0;
 }
 
@@ -1526,6 +1526,11 @@ textarea {
 
 .careers_field .resume > input {
 	border-bottom: none;
+}
+
+.quote_form {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .container, .container-fluid {
