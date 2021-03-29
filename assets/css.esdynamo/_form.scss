@@ -67,11 +67,8 @@
     flex-direction: column;
     align-items: flex-end;
 }
-.project_description {
-	flex: 0 0 100%;
-}
 @media (min-width: 48em) {
-	.quote_form p {
+	.quote_form .first_name, .quote_form .last_name  {
 		flex: 0 0 50%;
 	}
 }
