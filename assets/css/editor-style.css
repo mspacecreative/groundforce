@@ -590,6 +590,10 @@ textarea {
 	align-items: flex-end;
 }
 
+.project_description {
+	flex: 0 0 100%;
+}
+
 @media (min-width: 48em) {
 	.quote_form p {
 		flex: 0 0 50%;
